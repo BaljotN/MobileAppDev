@@ -5,15 +5,17 @@ import {
     ScrollView,
     StyleSheet
   } from 'react-native';
-import React from 'react'
+import React from 'react';
+import HomeScreen from '../screens/HomeScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 const ToDoList = ({tasks}) => {
   return (
-   <div>
+   <View>
     {tasks.map((task,index) => (
-      <div key={index}>{task}</div>
+      <View key={index}>{task}</View>
     ))}
-   </div>
+   </View>
   )
 }
 
